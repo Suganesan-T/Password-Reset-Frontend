@@ -1,8 +1,10 @@
+import { useNavigate } from 'react-router-dom'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import userService from './services/userServices'
 
 function Forgetpass() {
+    const navigate = useNavigate()
 
     const [email,setEmail] = useState("")
 
