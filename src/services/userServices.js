@@ -38,7 +38,7 @@ const userService = {
     },
     resetPassword: async(password, token)=>{
         //make a post request to the reset password enpoints
-        return await instance.post('/users/resetPassword',
+        return await instance.put('/users/resetPassword/:resetToken',
         {
             password,
             token
