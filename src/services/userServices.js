@@ -28,6 +28,13 @@ const userService = {
     getUser: async()=>{
         //make a get request to the get user enpoints
         return await protectInstance.get('/users/me');
+    },
+    forgetPassword: async(email)=>{
+        //make a post request to the forget password enpoints
+        return await instance.post('/users/forgetPassword',
+        {
+            username: email
+        })
     }
 }
 export default userService
