@@ -10,7 +10,7 @@ function Forgetpass() {
         e.preventDefault()
         userService.forgetPassword(email)
         .then(responce => {
-            console.log(res)
+            console.log(responce)
             alert("check your email")
             setEmail("")
             setTimeout(() => {
