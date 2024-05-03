@@ -13,7 +13,7 @@ function Home() {
                 }, 500);
             })
             .catch(error => {
-                alert(error.response.data.message)
+                alert(error.response)
             })
     }
 
