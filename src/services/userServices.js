@@ -19,7 +19,7 @@ const userService = {
         {
             username: email,
             password
-        }, {withCredentials: true});
+        })
     },
     logout: async()=>{
         //make a post request to the logout enpoints
