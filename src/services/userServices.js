@@ -36,11 +36,11 @@ const userService = {
             username: email
         })
     },
-    resetPassword: async(password, resetToken)=>{
+    resetPassword: async(password, token)=>{
         //make a post request to the reset password enpoints
-        return await instance.put(`/users/resetPassword/${resetToken}`,
+        return await instance.put(`/users/resetPassword/:${token}`,
         {
-            password,
+            password
         })
     }
 }
