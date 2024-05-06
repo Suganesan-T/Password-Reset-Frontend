@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
- 
+  "homepage":"https://cerulean-pastelito-5561d7.netlify.app/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
