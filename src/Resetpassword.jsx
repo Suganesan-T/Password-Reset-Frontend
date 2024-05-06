@@ -10,8 +10,8 @@ function Resetpassword() {
   const handleResetPassword = async () => {
     try {
       // Send a request to your backend to reset the password
-      const response = await fetch('/api/reset-password', {
-        method: 'POST',
+      const response = await fetch('/api/resetPassword', {
+        method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
         },
