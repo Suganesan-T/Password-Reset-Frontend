@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import userService from './services/userServices'
 
 function Forgetpass() {
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
 
     const [email,setEmail] = useState("")
 
@@ -15,9 +15,9 @@ function Forgetpass() {
             console.log(responce)
             alert("check your email")
             setEmail("")
-            setTimeout(() => {
-                navigate('/resetPassword/:resetToken')
-            }, 500);
+            // setTimeout(() => {
+            //     navigate('/resetPassword/:resetToken')
+            // }, 500);
         })
         .catch(error => {
             console.log(error)

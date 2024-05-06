@@ -33,7 +33,7 @@ function Resetpassword() {
                             <h1 classNameName="h3 mb-3 fw-normal text-center mt-5">Reset Your Password</h1>
                             <div classNameName="form-floating">
                                 <input type="password" classNameName="form-control" id="floatingPassword" placeholder="password"
-                                  value={password}  onChange={(e) => setPassword(e.target.value)}
+                                  onChange={(e) => setPassword(e.target.value)}
 
                                 />
                                 <label for="floatingPassword">Enter new password</label>
