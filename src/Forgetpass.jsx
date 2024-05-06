@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import userService from './services/userServices'
@@ -16,6 +16,7 @@ function Forgetpass() {
             alert("check your email")
             setEmail("")
             setTimeout(() => {
+                let resetToken = useParams()
                 navigate(`/resetPassword/${resetToken}`)
             }, 500);
         })
