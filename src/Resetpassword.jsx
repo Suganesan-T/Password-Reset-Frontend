@@ -11,7 +11,7 @@ function Resetpassword() {
     axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.put(`http://password-reset-backend-sz6n.onrender.com/api/users/resetPassword/${resetToken}`, { password })
+        axios.put(`https://password-reset-backend-sz6n.onrender.com/api/users/resetPassword/${resetToken}`, { password })
             .then(res => {
                 if (res.data.status === 'success') {
                     navigate('/login')
