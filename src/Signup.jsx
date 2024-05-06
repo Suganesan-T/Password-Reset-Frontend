@@ -49,7 +49,7 @@ function Signup() {
                                 <label for="floatingName">Name</label>
                             </div>
 
-                            <div className="form-floating">
+                            <div className="form-floating mt-3">
                                 <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com"
                                     value={email} onChange={(e) => setEmail(e.target.value)} />
                                 <label for="floatingInput">Email address</label>
