@@ -16,7 +16,7 @@ function Forgetpass() {
             alert("check your email")
             setEmail("")
             setTimeout(() => {
-                navigate("/resetPassword/:resetToken")
+                navigate(`/resetPassword/${resetToken}`)
             }, 500);
         })
         .catch(error => {
