@@ -13,15 +13,20 @@ function Resetpassword() {
         e.preventDefault();
         console.log(resetToken)
         axios.put(`https://password-reset-backend-sz6n.onrender.com/api/users/resetPassword/${resetToken}`, { password })
-
-            .then(res => {
-                if (res.data.status === 'success') {
-                    navigate('/')
-                }
-            })
-            .catch(err => {
-                console.log(err)
-            })
+        .then(responce => {
+            alert(responce.data.message)
+    
+            //clear the form
+            setPassword("")
+    
+            //redirect to login page
+            setTimeout(() => {
+              navigate("/")
+            }, 500);
+          })
+          .catch(error => {
+            alert(error.response.data.message);
+        })
     }
 
 
