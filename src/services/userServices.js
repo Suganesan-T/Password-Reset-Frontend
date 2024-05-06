@@ -23,7 +23,7 @@ const userService = {
     },
     logout: async()=>{
         //make a post request to the logout enpoints
-        return await instance.get('/users/logout');
+        return await protectInstance.get('/users/logout');
     },
     getUser: async()=>{
         //make a get request to the get user enpoints
